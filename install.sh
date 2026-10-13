@@ -1,8 +1,8 @@
 #!/bin/sh
 # The Install script for macOS and Linux. Paste one line into the Terminal:
 #
-#   macOS:  curl -fsSL https://raw.githubusercontent.com/fabkrum/portfolio-template/main/install.sh | sh
-#   Linux:  wget -qO- https://raw.githubusercontent.com/fabkrum/portfolio-template/main/install.sh | sh
+#   macOS:  curl -fsSL https://raw.githubusercontent.com/fabkrum/portfolio-template-90/main/install.sh | sh
+#   Linux:  wget -qO- https://raw.githubusercontent.com/fabkrum/portfolio-template-90/main/install.sh | sh
 #
 # It checks Google Chrome and Antigravity IDE, installs Git and Node where they
 # are missing, downloads Chrome DevTools for agents for the QA role, puts your

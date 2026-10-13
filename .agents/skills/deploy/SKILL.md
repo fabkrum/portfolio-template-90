@@ -82,7 +82,9 @@ What it can say, and what to do:
 
 ## 4. Wait until it is live
 
-Run:
+In this 90-minute version the feedback happens while the site goes live. First tell the person, in these words: "GitHub is publishing your site now; that takes about a minute. Meanwhile, open page 8 of the workshop guide, Feedback, and send it: I tell you when your site is live."
+
+Then run:
 
 ```
 node tools/live.mjs
@@ -108,7 +110,7 @@ It works out the site's address from the repo, then waits up to two minutes unti
 
 Tell the person, in one message:
 
-- the address of their site, as a link, and that they can share it now
+- the address of their site, as a link, and that they can share it now: on the guide's Ops page, under "Share your link", it goes into the room's gallery
 - what you published: the commit and the files in it
 - that every change they make later goes live the same way: ask Ops in a fresh chat, or push it themselves
 

@@ -1,6 +1,17 @@
-# Portfolio template
+# Portfolio template, 90-minute version
 
 Your own portfolio site, built with AI agents and published on GitHub Pages. The workshop guide walks you through every step; this page is the short version.
+
+This is the template for the **90-minute** workshop. The 2-hour workshop uses [fabkrum/portfolio-template](https://github.com/fabkrum/portfolio-template). Both build the same site with the same tools; the 90-minute version does less in the room:
+
+- **Analyst:** works from the content you prepared at home (your CV or LinkedIn PDF and a short note from the prep page), so it asks only about what is missing.
+- **Designer:** no Stitch in the room. It asks four short questions and writes your brief from your answers and your style's ready-made design. At home, ask it for your Stitch prompt.
+- **Ops:** asks for the feedback while GitHub publishes the site, so the room has sent it before the close.
+- **QA:** at home, after the workshop. In the room the Developer reads your legal page with you, and Ops comes right after the Developer. The QA skill is in this repo, ready for home.
+
+### Keeping the two templates in sync
+
+The two repos share their history: this one started as a copy of `portfolio-template` on 2026-10-13. They differ only in these files: `README.md`, `AGENTS.md`, `install.sh` and `install.ps1` (the address in their comments), `.github/workflows/ci.yml` and `tests/workflows.test.js` (the repo name), the skills `analyst`, `design`, `build`, `deploy` and `help`, and `tests/developer.test.js`, which pins the Developer's hand-over, and the Developer's checkpoint, which names Ops as next (`tools/checkpoint.mjs`, the `checkpoint` skill and `tests/checkpoints.test.js`). Fix everything else in `portfolio-template` first and port it here on purpose: `git remote add upstream-120 https://github.com/fabkrum/portfolio-template.git`, `git fetch upstream-120`, then `git cherry-pick` the commit. A fix in one of the files above needs its own change in each repo.
 
 ## Get your copy
 
@@ -18,19 +29,19 @@ Paste one line into a terminal and press Enter. It asks for your GitHub username
 **macOS** (Terminal):
 
 ```
-curl -fsSL https://raw.githubusercontent.com/fabkrum/portfolio-template/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/fabkrum/portfolio-template-90/main/install.sh | sh
 ```
 
 **Linux** (Terminal):
 
 ```
-wget -qO- https://raw.githubusercontent.com/fabkrum/portfolio-template/main/install.sh | sh
+wget -qO- https://raw.githubusercontent.com/fabkrum/portfolio-template-90/main/install.sh | sh
 ```
 
 **Windows** (PowerShell):
 
 ```
-irm https://raw.githubusercontent.com/fabkrum/portfolio-template/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/fabkrum/portfolio-template-90/main/install.ps1 | iex
 ```
 
 It checks Google Chrome and Antigravity IDE, installs Git and Node where they are missing, downloads Chrome DevTools for agents, puts your repo in a `portfolio` folder in your home folder and opens it in Antigravity IDE. Whatever it cannot do itself, it tells you in plain words, with what to do next. Run it again any time; it only does what is still missing.
@@ -101,7 +112,7 @@ It prints your site's address and waits up to two minutes until the site online 
 
 ## Fell behind?
 
-The room works through the roles together, one block per role. When time is up for a block and you are not done, jump to that block's checkpoint, and you start the next block with the room. From your repo folder, run this with the role of the block that has just ended, `analyst`, `designer`, `developer`, `qa` or `ops`. When the Developer's time is up, that is:
+The room works through the roles together, one block per role. When time is up for a block and you are not done, jump to that block's checkpoint, and you start the next block with the room. From your repo folder, run this with the role of the block that has just ended, `analyst`, `designer`, `developer` or `ops` (`qa` too, at home). When the Developer's time is up, that is:
 
 ```
 node tools/checkpoint.mjs developer
@@ -118,7 +129,7 @@ Once your site is live, you can add Optional modules: a section for YouTube vide
 - `site/content.json` – all your content. Edit this file, not the HTML.
 - `site/content.schema.json` – what the content file may contain.
 - `docs/spec.md` – a short spec of your site: who it is for and what a visitor should do. The Analyst role writes it, with your content file.
-- `design/brief.md` – your design brief: style, colours, fonts, shapes, layout, the one signature move and the order of the sections. It starts as the default design, in the Classic style; the Designer role interviews you and replaces it with yours from Stitch.
+- `design/brief.md` – your design brief: style, colours, fonts, shapes, layout, the one signature move and the order of the sections. It starts as the default design, in the Classic style; the Designer role interviews you and replaces it with yours, from your answers and your style's ready-made design (from Stitch, if you ask for it at home).
 - `design/default-brief.md` – that default design, kept so you can always go back to it.
 - `fonts/` – two openly licensed fonts for each of the five styles, with their licences. The ones your design brief names are copied into your site.
 - `site/` – the site itself: plain HTML, CSS and JavaScript.

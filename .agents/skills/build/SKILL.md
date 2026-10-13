@@ -114,7 +114,7 @@ Start the preview in a terminal of its own, so it keeps running while you go on 
 node tools/preview.mjs
 ```
 
-It builds the site and prints an address such as `http://localhost:8000`. It never finishes by itself, so do not wait for it to end. After each change, reload the page: the preview builds the site again first. If the page says the site could not be built, it names what is wrong: fix it if it is yours, such as a mistake in `render.js`; a content file that is not valid JSON belongs to the Analyst. Do not open it in a browser yourself, with Chrome DevTools or any other browser tool: starting one costs the person minutes, and QA takes screenshots at a phone and a wide width, in light and dark mode, in the next Block. Ask the person to open it in Chrome, look at it, and switch their computer between light and dark mode. The preview keeps running until they press Ctrl+C in its terminal.
+It builds the site and prints an address such as `http://localhost:8000`. It never finishes by itself, so do not wait for it to end. After each change, reload the page: the preview builds the site again first. If the page says the site could not be built, it names what is wrong: fix it if it is yours, such as a mistake in `render.js`; a content file that is not valid JSON belongs to the Analyst. Do not open it in a browser yourself, with Chrome DevTools or any other browser tool: starting one costs the person minutes, and QA takes screenshots at a phone and a wide width, in light and dark mode, at home. Ask the person to open it in Chrome and look at it. The preview keeps running until they press Ctrl+C in its terminal.
 
 ## 7. Write the legal page
 
@@ -153,8 +153,10 @@ Explain the change file by file in plain words before the person accepts it:
 - the legal page: the legal notice with the name and the email address, and the address, the VAT number and the phone number if the content file has them; and that you translated the page, if you did
 - what the Check said
 
+In this 90-minute version there is no QA in the room, so read the legal page with the person now: ask them to open it from the footer link in the preview and check their name, their email address and, if the content file has them, the address, the VAT number and the phone number, digit by digit. Change what they want changed on the page.
+
 Ask whether it matches what they want, and change what they want changed. Then end the role:
 
-"The Developer is done. Start a fresh chat and ask for QA: it audits accessibility and performance in Chrome and fixes what it finds."
+"The Developer is done. Start a fresh chat and ask for Ops: it publishes your site. QA, which checks your site on a phone, in dark mode and for speed, is for home: after the workshop, start a fresh chat and ask for QA."
 
-Do not start the QA audit in this chat.
+Do not start publishing in this chat.

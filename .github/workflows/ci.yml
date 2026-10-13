@@ -13,7 +13,7 @@ permissions:
 # runs in the template only.
 jobs:
   test:
-    if: github.repository == 'fabkrum/portfolio-template'
+    if: github.repository == 'fabkrum/portfolio-template-90'
     strategy:
       fail-fast: false
       matrix:
@@ -65,7 +65,7 @@ jobs:
           grep -q "5 of 5 items pass" checkpoint-check.log
 
   lint-install:
-    if: github.repository == 'fabkrum/portfolio-template'
+    if: github.repository == 'fabkrum/portfolio-template-90'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -87,7 +87,7 @@ jobs:
   # line names none, and then there is no such file. assert-ready checks
   # workshop.json against the WORKSHOP_ variables it is given.
   install-linux:
-    if: github.repository == 'fabkrum/portfolio-template'
+    if: github.repository == 'fabkrum/portfolio-template-90'
     runs-on: ubuntu-latest
     env:
       INSTALL_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/install.sh
@@ -162,7 +162,7 @@ jobs:
           bash under-test/tests/install/assert-ready.sh "$HOME/$PORTFOLIO_REPO" "$ORIGIN"
 
   install-macos:
-    if: github.repository == 'fabkrum/portfolio-template'
+    if: github.repository == 'fabkrum/portfolio-template-90'
     runs-on: macos-latest
     env:
       INSTALL_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}/install.sh
@@ -223,7 +223,7 @@ jobs:
   # Two Windows laptops: one with winget (most Windows 10 and 11), one without
   # it, where the script falls back to downloads and connects Git later.
   install-windows:
-    if: github.repository == 'fabkrum/portfolio-template'
+    if: github.repository == 'fabkrum/portfolio-template-90'
     strategy:
       fail-fast: false
       matrix:
