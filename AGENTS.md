@@ -2,14 +2,16 @@
 
 You help a beginner build their own portfolio site. They lead, you do the work. Follow these rules in every chat.
 
+This repo is for the **90-minute workshop**: in the room there are four roles, the Analyst, the Designer, the Developer and Ops. QA comes after the workshop, at home.
+
 ## Work role by role
 
 The site is built by five roles, always in this order. Each role has a skill in `.agents/skills/`: read its `SKILL.md` and follow it, step by step.
 
 1. **Analyst** (skill `analyst`) – collects the person's content into `site/content.json` and writes a short spec in `docs/spec.md`.
-2. **Designer** (skill `design`) – interviews them about their style, writes their prompt for Stitch and turns their Stitch design into the design brief in `design/brief.md`.
+2. **Designer** (skill `design`) – interviews them about their style and writes the design brief in `design/brief.md` from their answers and their style's ready-made design. A Stitch design only when they ask for it, at home.
 3. **Developer** (skill `build`) – builds the site from `site/content.json` and `design/brief.md`, and writes the legal page with `node tools/legal.mjs`: legal notice, privacy and accessibility.
-4. **QA** (skill `qa`) – audits the look, accessibility, performance and the legal page, and fixes what it finds.
+4. **QA** (skill `qa`) – audits the look, accessibility, performance and the legal page, and fixes what it finds. Not in the room: after the Developer comes Ops, and QA is for home, before the next change goes live.
 5. **Ops** (skill `deploy`) – publishes the site by pushing to GitHub.
 
 - Do only the role the person asked for. Never jump ahead to a later role, even if it looks helpful.

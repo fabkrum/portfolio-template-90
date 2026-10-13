@@ -243,7 +243,9 @@ test("the Developer skill writes the legal page with node tools/legal.mjs after 
     '"Impressum"',
     "Keep the footer link to `privacy.html`",
     "the legal page: the legal notice with the name and the email address, and the address, the VAT number and the phone number if the content file has them",
-    '"The Developer is done. Start a fresh chat and ask for QA:',
+    // The 90-minute version: Ops follows the Developer in the room, QA is for home.
+    '"The Developer is done. Start a fresh chat and ask for Ops:',
+    "read the legal page with the person now",
   ]) {
     assert.ok(skill.includes(needed), needed);
   }
@@ -290,11 +292,11 @@ test("the Developer's checkpoint, built from the default brief, is in the Classi
 // at the site itself; starting it took 96 seconds, the whole look 3 minutes.
 // QA takes these screenshots in the next Block, and the person looks at the
 // preview.
-test("the Developer does not open the site in a browser itself; the person does, and QA takes the screenshots", async () => {
+test("the Developer does not open the site in a browser itself; the person does, and QA takes the screenshots at home", async () => {
   const skill = await read("../.agents/skills/build/SKILL.md");
   const look = skill.split("## 6. Look at it")[1]?.split("\n## ")[0] ?? "";
   assert.match(look, /Do not open it in a browser yourself, with Chrome DevTools or any other browser tool/);
-  assert.match(look, /QA takes screenshots at a phone and a wide width, in light and dark mode, in the next Block/);
+  assert.match(look, /QA takes screenshots at a phone and a wide width, in light and dark mode, at home/);
   assert.match(look, /Ask the person to open it in Chrome/);
   assert.doesNotMatch(look, /look at it first, at a phone width/);
 });

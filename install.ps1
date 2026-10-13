@@ -1,6 +1,6 @@
 # The Install script for Windows. Paste one line into PowerShell:
 #
-#   irm https://raw.githubusercontent.com/fabkrum/portfolio-template/main/install.ps1 | iex
+#   irm https://raw.githubusercontent.com/fabkrum/portfolio-template-90/main/install.ps1 | iex
 #
 # It checks Google Chrome and Antigravity IDE, installs Git and Node where they
 # are missing, downloads Chrome DevTools for agents for the QA role, puts your

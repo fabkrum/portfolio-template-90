@@ -22,7 +22,7 @@ test("The template's own tests run only in the template, never in a participant'
   const jobs = jobsIn(await read("../.github/workflows/ci.yml"));
   assert.ok(jobs.length > 0, "CI jobs");
   for (const job of jobs) {
-    assert.equal(job.condition, "github.repository == 'fabkrum/portfolio-template'", job.name);
+    assert.equal(job.condition, "github.repository == 'fabkrum/portfolio-template-90'", job.name);
   }
 });
 

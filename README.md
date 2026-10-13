@@ -1,6 +1,17 @@
-# Portfolio template
+# Portfolio template, 90-minute version
 
 Your own portfolio site, built with AI agents and published on GitHub Pages. The workshop guide walks you through every step; this page is the short version.
+
+This is the template for the **90-minute** workshop. The 2-hour workshop uses [fabkrum/portfolio-template](https://github.com/fabkrum/portfolio-template). Both build the same site with the same tools; the 90-minute version does less in the room:
+
+- **Analyst:** works from the content you prepared at home (your CV or LinkedIn PDF and a short note from the prep page), so it asks only about what is missing.
+- **Designer:** no Stitch in the room. It asks four short questions and writes your brief from your answers and your style's ready-made design. At home, ask it for your Stitch prompt.
+- **Ops:** asks for the feedback while GitHub publishes the site, so the room has sent it before the close.
+- **QA:** at home, after the workshop. In the room the Developer reads your legal page with you, and Ops comes right after the Developer. The QA skill is in this repo, ready for home.
+
+### Keeping the two templates in sync
+
+The two repos share their history: this one started as a copy of `portfolio-template` on 2026-10-13. They differ only in these files: `README.md`, `AGENTS.md`, `install.sh` and `install.ps1` (the address in their comments), `.github/workflows/ci.yml` and `tests/workflows.test.js` (the repo name), the skills `analyst`, `design`, `build`, `deploy` and `help`, and `tests/developer.test.js`, which pins the Developer's hand-over. Fix everything else in `portfolio-template` first and port it here on purpose: `git remote add upstream-120 https://github.com/fabkrum/portfolio-template.git`, `git fetch upstream-120`, then `git cherry-pick` the commit. A fix in one of the files above needs its own change in each repo.
 
 ## Get your copy
 
@@ -18,19 +29,19 @@ Paste one line into a terminal and press Enter. It asks for your GitHub username
 **macOS** (Terminal):
 
 ```
-curl -fsSL https://raw.githubusercontent.com/fabkrum/portfolio-template/main/install.sh | sh
+curl -fsSL https://raw.githubusercontent.com/fabkrum/portfolio-template-90/main/install.sh | sh
 ```
 
 **Linux** (Terminal):
 
 ```
-wget -qO- https://raw.githubusercontent.com/fabkrum/portfolio-template/main/install.sh | sh
+wget -qO- https://raw.githubusercontent.com/fabkrum/portfolio-template-90/main/install.sh | sh
 ```
 
 **Windows** (PowerShell):
 
 ```
-irm https://raw.githubusercontent.com/fabkrum/portfolio-template/main/install.ps1 | iex
+irm https://raw.githubusercontent.com/fabkrum/portfolio-template-90/main/install.ps1 | iex
 ```
 
 It checks Google Chrome and Antigravity IDE, installs Git and Node where they are missing, downloads Chrome DevTools for agents, puts your repo in a `portfolio` folder in your home folder and opens it in Antigravity IDE. Whatever it cannot do itself, it tells you in plain words, with what to do next. Run it again any time; it only does what is still missing.

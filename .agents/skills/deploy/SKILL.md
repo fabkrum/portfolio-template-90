@@ -90,6 +90,8 @@ node tools/live.mjs
 
 It works out the site's address from the repo, then waits up to two minutes until the site online shows what was just pushed. It finishes by itself; wait for it. Tell the person what it said.
 
+In this 90-minute version the feedback happens while the site goes live. Before you run the command, tell the person, in these words: "GitHub is publishing your site now; that takes about a minute. Meanwhile, open page 8 of the workshop guide, Feedback, and send it: I tell you when your site is live."
+
 - **"Your site is live"**: go to step 5.
 - **"Most likely GitHub Pages is not switched on"**: this is needed once per repo. Give the person the steps it printed, in plain words: open the settings page it names in Chrome, and under "Build and deployment" set **Source** to **GitHub Actions**. Ask them to tell you **done**. Then publish again with these two commands, and run `node tools/live.mjs` again:
 
@@ -108,7 +110,7 @@ It works out the site's address from the repo, then waits up to two minutes unti
 
 Tell the person, in one message:
 
-- the address of their site, as a link, and that they can share it now
+- the address of their site, as a link, and that they can share it now: on the guide's Ops page, under "Share your link", it goes into the room's gallery
 - what you published: the commit and the files in it
 - that every change they make later goes live the same way: ask Ops in a fresh chat, or push it themselves
 
