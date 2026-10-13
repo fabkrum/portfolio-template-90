@@ -112,7 +112,7 @@ It prints your site's address and waits up to two minutes until the site online 
 
 ## Fell behind?
 
-The room works through the roles together, one block per role. When time is up for a block and you are not done, jump to that block's checkpoint, and you start the next block with the room. From your repo folder, run this with the role of the block that has just ended, `analyst`, `designer`, `developer`, `qa` or `ops`. When the Developer's time is up, that is:
+The room works through the roles together, one block per role. When time is up for a block and you are not done, jump to that block's checkpoint, and you start the next block with the room. From your repo folder, run this with the role of the block that has just ended, `analyst`, `designer`, `developer` or `ops` (`qa` too, at home). When the Developer's time is up, that is:
 
 ```
 node tools/checkpoint.mjs developer
@@ -129,7 +129,7 @@ Once your site is live, you can add Optional modules: a section for YouTube vide
 - `site/content.json` – all your content. Edit this file, not the HTML.
 - `site/content.schema.json` – what the content file may contain.
 - `docs/spec.md` – a short spec of your site: who it is for and what a visitor should do. The Analyst role writes it, with your content file.
-- `design/brief.md` – your design brief: style, colours, fonts, shapes, layout, the one signature move and the order of the sections. It starts as the default design, in the Classic style; the Designer role interviews you and replaces it with yours from Stitch.
+- `design/brief.md` – your design brief: style, colours, fonts, shapes, layout, the one signature move and the order of the sections. It starts as the default design, in the Classic style; the Designer role interviews you and replaces it with yours, from your answers and your style's ready-made design (from Stitch, if you ask for it at home).
 - `design/default-brief.md` – that default design, kept so you can always go back to it.
 - `fonts/` – two openly licensed fonts for each of the five styles, with their licences. The ones your design brief names are copied into your site.
 - `site/` – the site itself: plain HTML, CSS and JavaScript.
