@@ -209,7 +209,8 @@ test("a legal page written for someone else is written again for the person in t
 });
 
 // What the command tells the person, in plain words.
-const NEXT_ROLE = { analyst: "the Designer", designer: "the Developer", developer: "QA", qa: "Ops", ops: "Ops" };
+// The 90-minute workshop: Ops follows the Developer in the room; QA is for home.
+const NEXT_ROLE = { analyst: "the Designer", designer: "the Developer", developer: "Ops", qa: "Ops", ops: "Ops" };
 const BLOCK_NAME = { analyst: "Analyst", designer: "Designer", developer: "Developer", qa: "QA", ops: "Ops" };
 
 for (const role of BLOCKS) {
@@ -407,7 +408,7 @@ test("Antigravity finds the checkpoint skill, and its description matches a pers
 test("the checkpoint skill runs the one command after at most one question, reads it back and hands over to a fresh chat", async () => {
   const skill = await checkpointSkill();
   assert.deepEqual(commandsIn(skill), ["node tools/checkpoint.mjs developer"]);
-  for (const needed of [/Ask nothing/, /ask once/i, /use the one before it/, /word for word/, /add nothing to it/, /"You are back in step with the room\. Start a fresh chat and ask for QA\."/, /do not start it/]) {
+  for (const needed of [/Ask nothing/, /ask once/i, /use the one before it/, /word for word/, /add nothing to it/, /"You are back in step with the room\. Start a fresh chat and ask for Ops\."/, /do not start it/]) {
     assert.match(skill, needed);
   }
   for (const needed of [/Never catch up by doing a role's work/, /never use Git/]) assert.match(skill, needed);

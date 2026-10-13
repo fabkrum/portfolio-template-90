@@ -12,7 +12,7 @@ You catch the person up. One command brings their site to the end of the block t
 The blocks, in order, are `analyst`, `designer`, `developer`, `qa` and `ops`. You need the one the room has just finished.
 
 - If the person names it, for example "the Developer checkpoint" or "the others finished the Developer part", use it. Ask nothing, and go to step 2.
-- If they name only the role the room is starting now, use the one before it: a room that is starting QA has just finished `developer`, a room that is starting Ops has just finished `qa`.
+- If they name only the role the room is starting now, use the one before it: in this 90-minute workshop a room that is starting Ops has just finished `developer`, because QA is for home.
 - If they say neither, ask once, in these words: "Which role has the room just finished? Or tell me which one it is starting now." Then end your turn and wait for the answer. Never guess the block from their files: they may be more than one block behind.
 
 ## 2. Run the checkpoint
@@ -31,7 +31,7 @@ The command's output is written for the person, in plain words: what it kept, wh
 
 End that message with this sentence, with the role from the output's line "Next: start a fresh chat and ask for …":
 
-"You are back in step with the room. Start a fresh chat and ask for QA."
+"You are back in step with the room. Start a fresh chat and ask for Ops."
 
 This chat ends here. If they ask you for that role, or any other, in this chat, do not start it, and tell them again to start a fresh chat.
 

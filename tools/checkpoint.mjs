@@ -16,7 +16,8 @@ const repoDir = fileURLToPath(new URL("..", import.meta.url));
 const ABOUT = {
   analyst: { name: "Analyst", next: "the Designer", gives: "your content file and spec, or the sample person" },
   designer: { name: "Designer", next: "the Developer", gives: "your design brief, or the default design" },
-  developer: { name: "Developer", next: "QA", gives: "the site, built in the colours and fonts of your brief, and your legal page" },
+  // The 90-minute workshop: Ops follows the Developer in the room; QA is for home.
+  developer: { name: "Developer", next: "Ops", gives: "the site, built in the colours and fonts of your brief, and your legal page" },
   qa: { name: "QA", next: "Ops", gives: "the same as the Developer's: QA found nothing to fix" },
   ops: { name: "Ops", next: "Ops", gives: "the same as QA's: Ops publishes and changes no file" },
 };
