@@ -118,7 +118,7 @@
     # -------------------------------------------------------------- GitHub
 
     # The workshop's template, which every participant's repo is a copy of.
-    $templateRepo = 'fabkrum/portfolio-template'
+    $templateRepo = 'fabkrum/portfolio-template-90'
     $ghHome = Join-Path $env:LOCALAPPDATA 'Programs\gh'
 
     # The repo, its folder in the home folder and its address on GitHub.

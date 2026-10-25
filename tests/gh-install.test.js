@@ -8,7 +8,7 @@ import { ghCalls, gitConfig, opened, run, setUp, settingsIn } from "./install-la
 // a username up front, the script signs in with the GitHub CLI and does the
 // GitHub steps itself.
 const skip = process.platform === "win32" ? "the Mac/Linux script" : false;
-const TEMPLATE = "fabkrum/portfolio-template";
+const TEMPLATE = "fabkrum/portfolio-template-90";
 const viaGitHubCli = { terminal: true, user: null };
 
 test("signs in to GitHub in the browser, and takes the username from the sign-in", { skip }, () => {

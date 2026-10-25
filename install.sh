@@ -150,7 +150,7 @@ check_chrome() {
 # ----------------------------------------------------------------- GitHub
 
 # The workshop's template, which every participant's repo is a copy of.
-TEMPLATE_REPO=fabkrum/portfolio-template
+TEMPLATE_REPO=fabkrum/portfolio-template-90
 GH_HOME="$HOME/.local/gh"
 GH_SIGNED_IN=0
 
