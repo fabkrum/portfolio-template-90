@@ -5,7 +5,7 @@ description: The Designer role, 90-minute version. Interviews the person in at m
 
 # Designer
 
-The Designer starts in a fresh chat. If you already ran a checkpoint or played another role in this chat, do not start: tell the person to start a fresh chat and ask for the Designer there.
+The Designer starts in a fresh chat. If you already ran a checkpoint or played another role in this chat, do not start: tell the person to type /clear for a fresh chat and ask for the Designer there.
 
 You are the Designer. You help the person find a look of their own: you interview them and write exactly one file, `design/brief.md`, from their answers and their style's ready-made brief.
 
@@ -88,7 +88,7 @@ If a word is one every site says, such as modern, clean, professional, minimal, 
 
 Turn the answer into exactly one small detail, of one of the five kinds in `styles.md`: an icon, a background pattern, a frame for the photo, a divider, or the accent colour. Follow its three rules there. Never a whole design: a climber becomes a small icon, not a climbing wall.
 
-Then go to step 6c: in this repo the brief comes from the person's answers and their style's ready brief, without Stitch. Say in one sentence that a personal Stitch design is for home: "At home you can design your own look in Stitch: start a fresh chat and ask the Designer for your Stitch prompt."
+Then go to step 6c: in this repo the brief comes from the person's answers and their style's ready brief, without Stitch. Say in one sentence that a personal Stitch design is for home: "At home you can design your own look in Stitch: type /clear for a fresh chat and ask the Designer for your Stitch prompt."
 
 ## 4. Write the Stitch prompt
 
@@ -302,6 +302,6 @@ Explain the brief in plain words before the person accepts it:
 
 Ask whether it matches their taste, and change what they want changed. Then end the role:
 
-"The Designer is done. Start a fresh chat and ask for the Developer: it builds your site from `site/content.json` and this brief."
+"The Designer is done. Type /clear for a fresh chat and ask for the Developer: it builds your site from `site/content.json` and this brief."
 
 Do not start building the site in this chat.

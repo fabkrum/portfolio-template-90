@@ -244,7 +244,7 @@ test("the Developer skill writes the legal page with node tools/legal.mjs after 
     "Keep the footer link to `privacy.html`",
     "the legal page: the legal notice with the name and the email address, and the address, the VAT number and the phone number if the content file has them",
     // The 90-minute version: Ops follows the Developer in the room, QA is for home.
-    '"The Developer is done. Start a fresh chat and ask for Ops:',
+    '"The Developer is done. Type /clear for a fresh chat and ask for Ops:',
     "read the legal page with the person now",
   ]) {
     assert.ok(skill.includes(needed), needed);
