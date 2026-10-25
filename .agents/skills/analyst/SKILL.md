@@ -47,7 +47,7 @@ How to read the pace is in `AGENTS.md`, under "The Role clock". This Role's must
 
 Start with this message, in these words. It is your first question:
 
-"I'm the Analyst. I collect the content for your site: a few minutes when you bring what you prepared at home. Drop your **CV** or your **LinkedIn PDF** into this chat, and paste the **note** from the prep page with it: your site language, goal, projects, links and email address. No note? Fine: I ask about what is missing, one question at a time.
+"I'm the Analyst. I collect the content for your site: a few minutes when you bring what you prepared at home. Drag your **CV** or your **LinkedIn PDF** file from your folder into this window, and paste the **note** from the prep page in the same message, then press Enter: your site language, goal, projects, links and email address. No note? Fine: I ask about what is missing, one question at a time.
 
 Nothing prepared? Then:
 
