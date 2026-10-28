@@ -98,7 +98,7 @@ What it can say, and what to do:
 
 ## 4. Wait until it is live
 
-In this 90-minute version the feedback happens while the site goes live. First tell the person, in these words: "GitHub is publishing your site now; that takes about a minute. Meanwhile, open page 8 of the workshop guide, Feedback, and send it: I tell you when your site is live."
+In this 90-minute version the feedback happens while the site goes live. First tell the person, in these words: "GitHub is publishing your site now; that takes about a minute. Meanwhile, open page 7 of the workshop guide, Feedback, and send it: I tell you when your site is live."
 
 Then run:
 

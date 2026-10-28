@@ -17,7 +17,7 @@ node tools/where.mjs
 
 It lists the five Roles, each done, to fix or not yet, and ends with the next step.
 
-This repo is the 90-minute version: QA is for home. When the command names QA as the next step and the workshop is not over, say that Ops is next instead, with its sentence, `Start the Ops step.`, on guide page 7, and that QA comes at home.
+This repo is the 90-minute version: QA is for home. When the command names QA as the next step and the workshop is not over, say that Ops is next instead, with its sentence, `Start the Ops step.`, on guide page 6, and that QA comes at home.
 
 ## 2. An error first
 
