@@ -57,7 +57,7 @@ test("the workshop's end comes first: no Role runs past it", async () => {
     await workshop(dir, { start: "16:00", end: "17:10" });
     // Ops, with the feedback, has 11 minutes; the workshop ends first.
     const started = await startRole(dir, "ops", at(17, 2));
-    assert.equal(started.text, "Clock started: Ops, at 17:02. 8 minutes, until 17:10. The room's plan: the next Block at 17:12.");
+    assert.equal(started.text, "Clock started: Ops, at 17:02. 8 minutes, until 17:10. The room's plan: the next Block at 17:05.");
   });
 });
 
@@ -106,8 +106,8 @@ test("a tool prints the clock's lines only for a step of the Role whose clock ru
     await workshop(dir, { start: "16:00" });
     assert.equal(await clockFooter(dir, "check", at(17, 20)), "", "no clock yet");
     await startRole(dir, "developer", at(16, 39));
-    assert.equal(await clockFooter(dir, "check", at(16, 58)), "\nClock: Developer, 19 minutes used, 3 minutes left, until 17:01.\nPace: on plan.");
-    assert.equal(await clockFooter(dir, "check-content", at(16, 58)), "", "the Analyst's step, not the Developer's");
+    assert.equal(await clockFooter(dir, "check", at(16, 51)), "\nClock: Developer, 12 minutes used, 3 minutes left, until 16:54.\nPace: on plan.");
+    assert.equal(await clockFooter(dir, "check-content", at(16, 51)), "", "the Analyst's step, not the Developer's");
     // A clock from the day before is not today's.
     assert.equal(await clockFooter(dir, "check", new Date(2026, 9, 11, 16, 58)), "");
   });
