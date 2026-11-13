@@ -20,10 +20,10 @@
     },
     "developer": {
       "startsAt": 39,
-      "minutes": 22,
+      "minutes": 15,
       "steps": [
-        { "id": "built", "by": 12 },
-        { "id": "checked", "by": 17, "tool": "check" }
+        { "id": "built", "by": 8 },
+        { "id": "checked", "by": 12, "tool": "check" }
       ]
     },
     "qa": {
@@ -35,7 +35,7 @@
       ]
     },
     "ops": {
-      "startsAt": 61,
+      "startsAt": 54,
       "minutes": 11,
       "steps": [
         { "id": "live", "by": 6, "tool": "live" }
